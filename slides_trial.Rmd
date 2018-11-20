@@ -1,31 +1,46 @@
 ---
-title: "Slides Demo"
+title: "Lab 14: I Can Publish Slides"
 author: "Stefania Ashby"
-date: "November 20, 2018"
-output: ioslides_presentation
+date: "2018/11/20 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "hygge", "hygge-duke"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
 ```
 
-## R Markdown
+# R Markdown
 
 This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
-## Slide with Bullets
+---
+
+# Slide with Bullets
 
 - Bullet 1
 - Bullet 2
 - Bullet 3
 
-## Slide with R Output
+--- 
+
+# Slide with R Output
 
 ```{r cars, echo = TRUE}
 summary(cars)
 ```
+
+---
 
 ## Slide with Plot
 
